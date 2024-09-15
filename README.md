@@ -2,9 +2,17 @@
 
 ## Description
 
-Ce code illustre comment scraper les divers championnats à uiliser dans les models de IAforbet
+Ce code illustre comment scraper les divers championnats à utiliser dans les modèles de IAforbet.
 
 ## Installation
 
-1. Clonez le dépôt : `https://github.com/Arnel7/bd-foot.git`
-2. Installez les dépendances : `pip install -r requirements.txt`
+1. Clonez le dépôt :
+
+   ```bash
+   git clone https://github.com/Arnel7/bd-foot.git
+   ```
+
+2. Installez les dépendances :
+   ```bash
+   pip install -r requirements.tx
+   ```
