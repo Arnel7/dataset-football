@@ -1,0 +1,4 @@
+selenium==4.11.2
+beautifulsoup4==4.12.2
+pyfiglet==0.8.post1
+mysql-connector-python==8.1.0
