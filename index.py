@@ -18,7 +18,6 @@ import json
 
 
 
-
 import mysql.connector
 retry = 0
 max_retry = 8
