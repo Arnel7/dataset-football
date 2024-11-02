@@ -17,17 +17,41 @@ Lien vers la vidéo YouTube : [https://www.youtube.com/watch?v=tzM_TEbp0OE](http
 
    ```
 
-2. Installez les dépendances :
+2. Prérequis:
+
+   Vous avez besoin de `GNU Make` pour:
+
+   - mettre en place votre environnement
+   - installer les dépendances
+   - executer le code présent dans ce projet
+
+   si vous utilisez `linux` vous pouvez vérifier que votre installation est à jour jour avec cette commande 
 
    ```bash
-   pip install -r requirements.tx
+      make --version
    ```
 
-3. Créez une base de données SQL nommée "football" et importez la base de donnée qui se trouve dans le projet.
+   Cependant si vous utilisez windows vous pouvez vous reférer au guide d'installation suivant [make for Windows](https://gnuwin32.sourceforge.net/packages/make.htm)
 
-4. Groupe de discussion Telegram : [https://t.me/+i1lvynnUuexkZjBk](https://t.me/+i1lvynnUuexkZjBk)
+   > ⚠️ **Attention** : Vérifiez votre installation `python` et le gestionnaire de package `pip`.
 
-5. Faites vos améliorations et proposez de nouvelles solutions.
+3. Mise en place de l'environnement et installation des dépendances :
+
+   ```bash
+      make setup
+   ```
+
+   > vous pouvez voir toutes les commandes disponibles avec
+
+   ```bash
+      make 
+   ```
+
+4. Créez une base de données SQL nommée "football" et importez la base de donnée qui se trouve dans le projet.
+
+5. Groupe de discussion Telegram : [https://t.me/+i1lvynnUuexkZjBk](https://t.me/+i1lvynnUuexkZjBk)
+
+6. Faites vos améliorations et proposez de nouvelles solutions.
 
 ## NB : Si le navigateur vous demande de choisir un moteur de recherche lorsque vous lancez le script, veuillez choisir Google.
 
