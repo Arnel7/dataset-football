@@ -2,6 +2,34 @@
 
 ## Description
 
+### Objectif
+
+Créer un dataset qui fournit des statistiques historiques sur les matchs de football.
+
+### Statistiques à Collecter
+
+- **Nombre de passes** effectuées
+- **Nombre de tirs** au but
+- **Pourcentage de possession**
+- **Cartons jaunes** et **fautes** commises
+- **Nombre de corners** tirés
+- **Tirs cadrés** et **tirs non cadrés**
+- **Temps de possession moyen**
+- **Nombre d'interceptions** et **tacles réussis**
+
+### Données Supplémentaires
+
+- Récupération des **futurs matchs** des équipes.
+
+- **Ligues de football** à inclure dans le dataset, comme :
+  - Ligue 1
+  - Premier League
+  - La Liga
+  - Serie A
+  - Bundesliga
+  - Ligue des champions
+  - et bien d'autres ....
+
 Ce code illustre comment scraper les divers championnats à utiliser pour notre dataset.
 
 Ceci est un exemple de code que j'ai écrit pour scraper les données. Vous pouvez vous en servir pour récupérer toutes les informations des championnats comme je le montre dans ma vidéo YouTube ci-dessous. Je vous recommande de suivre la vidéo pour mieux comprendre l'idée.
@@ -25,7 +53,7 @@ Lien vers la vidéo YouTube : [https://www.youtube.com/watch?v=tzM_TEbp0OE](http
    - installer les dépendances
    - executer le code présent dans ce projet
 
-   si vous utilisez `linux` vous pouvez vérifier que votre installation est à jour jour avec cette commande 
+   si vous utilisez `linux` vous pouvez vérifier que votre installation est à jour jour avec cette commande
 
    ```bash
       make --version
@@ -44,7 +72,7 @@ Lien vers la vidéo YouTube : [https://www.youtube.com/watch?v=tzM_TEbp0OE](http
    > vous pouvez voir toutes les commandes disponibles avec
 
    ```bash
-      make 
+      make
    ```
 
 4. Créez une base de données SQL nommée "football" et importez la base de donnée qui se trouve dans le projet.

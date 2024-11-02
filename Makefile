@@ -1,7 +1,14 @@
 # Variables
 VENV = .venv
-PYTHON = $(VENV)/bin/python
-PIP = $(VENV)/bin/pip
+ifeq ($(OS),Windows_NT)
+    PYTHON = $(VENV)/Scripts/python
+    PIP = $(VENV)/Scripts/pip
+    ACTIVATE = $(VENV)/Scripts/activate
+else
+    PYTHON = $(VENV)/bin/python
+    PIP = $(VENV)/bin/pip
+    ACTIVATE = $(VENV)/bin/activate
+endif
 PROJECT_NAME = dataset-football
 SRC_DIR = src
 TEST_DIR = tests
@@ -9,11 +16,11 @@ CRAWLER_SCRIPT = $(SRC_DIR)/main.py
 
 # Environnement virtuel et dépendances
 .PHONY: setup
-setup: $(VENV)/bin/activate
+setup: $(ACTIVATE)
 
-$(VENV)/bin/activate: requirements.txt
-	python3 -m venv $(VENV)
-	$(PIP) install --upgrade pip
+$(ACTIVATE): requirements.txt
+	python -m venv $(VENV)
+	$(PYTHON) -m pip install --upgrade pip
 	$(PIP) install -r requirements.txt
 
 .PHONY: install
