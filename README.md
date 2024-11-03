@@ -2,8 +2,6 @@
 
 ## Description
 
-### Objectif
-
 Créer un dataset qui fournit des statistiques historiques sur les matchs de football.
 
 ### Statistiques à Collecter
@@ -20,6 +18,9 @@ Créer un dataset qui fournit des statistiques historiques sur les matchs de foo
 ### Données Supplémentaires
 
 - Récupération des **futurs matchs** des équipes.
+- Mettre à jour les données d'un match dès qu'il est terminé.
+- Classer les matchs des équipes européennes par championnat et également par équipes elles-mêmes afin de faciliter les manipulations.
+- Automatiser tout le processus
 
 - **Ligues de football** à inclure dans le dataset, comme :
   - Ligue 1
